@@ -79,6 +79,7 @@ rm(list=ls())
 ```{r, message=FALSE}
 library(tidyverse)
 library(palmerpenguins)
+library(ggthemes)
 glimpse(penguins)
 ```
 
@@ -87,7 +88,7 @@ glimpse(penguins)
 ```{r}
 ggplot(
   data = penguins, 
-       mapping = aes(x=flipper_length_mm, y=body_mass_g,)
+       mapping = aes(x=flipper_length_mm, y=body_mass_g)
   ) +
   geom_point(mapping = aes(color = species, shape = species)) +
   geom_smooth(method = "lm") +
@@ -96,7 +97,12 @@ ggplot(
     subtitle = "Dimensions for Adelie, Chinstrap, and Gentoo Penguins",
     x = "Flipper length (mm)", y = "Body mass (g)",
     color = "Species", shape = "Species"
-  ) 
+  ) +
+  scale_color_colorblind()
 ```
 
 3.  Explain why each aesthetic is mapped at the level that it is (i.e., at the global level, in the `ggplot()` function call, or at the geom level, in the `geom_XXX()` function call). Note: A lot of different options will work, but some options are clearly better than others.
+
+```{r}
+#Mapping species globally has the undesirable effect of creating distinct linear models for each cluster of species data. Mapping species color and shape at the point level creates distinctly colored and shaped data points for each group of species data, which helps to make the graph easily interpretable.
+```
