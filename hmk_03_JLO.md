@@ -125,8 +125,7 @@ ggplot(aes(x=flipper_length_mm, y=body_mass_g)
     level, in the `geom_XXX()` function call). Note: A lot of different
     options will work, but some options are clearly better than others.
 
-*Mapping species globally has the undesirable effect of creating
-distinct linear models for each cluster of species data. Mapping species
-color (and shape) at the point level creates distinctly colored and
-shaped data points for each group of species data, which helps to make
-the graph easily interpretable.*
+*Every aesthetic that is mapped globally is subsequently mapped to each
+geom… Often the graph will be more interpretable if certain variables
+are mapped only to specific geoms. In this case, mapping color only to
+geom_point() gives the desired effect.*
