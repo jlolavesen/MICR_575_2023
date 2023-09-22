@@ -78,7 +78,9 @@ c(1, 5, 9) + 3
 
     [1]  4  8 12
 
-*This code is adding the constant 3 to each element in the vector.*
+*This code is adding 3 (a vector of 1 element) to each element in the
+longer vector by the same recycling concept as shown in the previous
+question.*
 
 6.  Remove (delete) every variable in your workspace.
 

@@ -1,24 +1,6 @@
 Hmk_04 template: Data frames and data wrangling
 ================
 
-Please read the entire [R for Data
-Science](https://r4ds.hadley.nz/data-transform) before you do this
-homework.
-
-This homework relies on the `nycflights13` package, which contains
-several data frames, including `airlines`, `airports`, `flights`,
-`planes`, and `weather`. Loading `nycflights13`
-(`library(nycflights13)`) puts all of these data frames on the search
-path.
-
-## Installing data packages
-
-Remember that any package needs to be installed only once (per version
-of R), but needs to be loaded every time we start a new R session.
-
-To install `nyclflights13`, use `install.packages("nycflights13")` (with
-quotation marks). To load it, use `library(nycflights13)`.
-
 # Question 1: filtering
 
 Make a plot of air time as a function of distance (air time on the y
