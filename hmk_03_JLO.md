@@ -3,10 +3,6 @@ Homework 03
 
 # Base R and R Basics
 
-HINT: Remember that you can get help on any function by typing
-`?`(function name). For instance, `?rnorm` gives help on the `rnorm()`
-function.
-
 ## Creating and naming variables
 
 1.  Create a variable called `x` and use it to store the result of the
@@ -34,9 +30,8 @@ getwd()
 
     [1] "/Users/Jason/Documents/UT_Knoxville/MICR_575/R"
 
-``` r
-#This working directory seems appropriate; I reckon it was set by RStudio.
-```
+*This working directory seems appropriate; I reckon it was set by
+RStudio.*
 
 ## Vectors
 
@@ -71,19 +66,19 @@ v1 + v2
 
     [1] 2 4 6 5
 
-``` r
-#R is adding the equally indexed values of v1 and v2 together, but it's not clear to me why the 4th output value is 5; I expected 4 or NA
-```
+*R is adding the equally indexed elements of v1 and v2 together, then
+recycling to the first element in v1 to add to the 4th element in v2*
 
 5.  Explain what the following code does. It may be helpful to reference
     the answer to the previous question:
 
 ``` r
-# adding the constant 3 to each value in the vector.
 c(1, 5, 9) + 3
 ```
 
     [1]  4  8 12
+
+*This code is adding the constant 3 to each element in the vector.*
 
 6.  Remove (delete) every variable in your workspace.
 
