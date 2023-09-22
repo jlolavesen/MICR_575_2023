@@ -106,15 +106,14 @@ library(ggthemes)
 na.omit(penguins) |>
 ggplot(aes(x=flipper_length_mm, y=body_mass_g)
   ) +
-  geom_point(mapping = aes(color = species, shape = species)) +
-  geom_smooth(method = "lm") +
+  geom_point(mapping = aes(color = bill_depth_mm)) +
+  geom_smooth() +
   labs(
-    title = "Body mass and flipper length",
+    title = "Body mass vs. flipper length",
     subtitle = "Dimensions for Adelie, Chinstrap, and Gentoo Penguins",
     x = "Flipper length (mm)", y = "Body mass (g)",
-    color = "Species", shape = "Species"
-  ) +
-  scale_color_colorblind()
+    color = "Bill Depth (mm)"
+  )
 ```
 
 ![](hmk_03_JLO_files/figure-gfm/unnamed-chunk-11-1.png)
@@ -126,6 +125,6 @@ ggplot(aes(x=flipper_length_mm, y=body_mass_g)
 
 *Mapping species globally has the undesirable effect of creating
 distinct linear models for each cluster of species data. Mapping species
-color and shape at the point level creates distinctly colored and shaped
-data points for each group of species data, which helps to make the
-graph easily interpretable.*
+color (and shape) at the point level creates distinctly colored and
+shaped data points for each group of species data, which helps to make
+the graph easily interpretable.*
