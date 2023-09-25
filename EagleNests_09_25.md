@@ -1,19 +1,18 @@
----
-title: "InClass_09_25"
-format: gfm
-editor: visual
----
+InClass_09_25
+================
 
-# Fake Eagle's Nests Assignment
+# Fake Eagle’s Nests Assignment
 
-```{r message=FALSE}
+``` r
 library(tidyverse)
 eagle.nest <- read.csv("Datas/fake_eagle_nest_counts.csv")
 ```
 
-*The data appear relatively tidy, however, one could make the argument that each row contains multiple observations. Pivoting the data will make it easier to graph nest counts vs. time.*
+*The data appear relatively tidy, however, one could make the argument
+that each row contains multiple observations. Pivoting the data will
+make it easier to graph nest counts vs. time.*
 
-```{r message=FALSE}
+``` r
 #using abs() to remove one nonsensical negative value
 
 abs(eagle.nest) |>
@@ -33,3 +32,5 @@ ggplot(aes(x=year, y=nest.count)
     color = "Region"
     )
 ```
+
+![](EagleNests_09_25_files/figure-gfm/unnamed-chunk-2-1.png)
