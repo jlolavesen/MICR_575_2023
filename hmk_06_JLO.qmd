@@ -1,0 +1,17 @@
+---
+title: "hmk_06_JLO"
+format: gfm
+editor: visual
+---
+
+## A Good Plot
+
+![](hmk_06_JLO_files/Kuypers_figure_annamox_blacksea.png) *Kuypers et al. (2003) Anaerobic ammonium oxidation by annamox bacteria in the Black Sea. Nature 422:608-611*
+
+*This plot presents a lot of information but is cogent and easily interpretable*
+
+## A Bad Plot
+
+![](hmk_06_JLO_files/Mora_figure_vulnerability_ocean.png) *Mora et al. (2013) Biotic and human vulnerability to projected changes in ocean biogeochemistry in the 21st Century. PLoS Biol 11(10)*
+
+*This plot is unclear, confusing, overly complex, and ambiguous*
