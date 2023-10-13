@@ -1,0 +1,17 @@
+---
+title: "hmk_02"
+format: gfm
+editor: visual
+---
+
+*1. What were the main issues in the Reinhard and Rogoff issue, and how best could they have been avoided?*
+
+Reinhard and Rogoff published a high-profile economic piece arguing that GDP slows to a standstill when national debt values exceed 90% of GDP. Their analysis and subsequent conclusion were faulty due to an MS Excel error; cascading deleterious political effects ensued. These issues could have been comfortably avoided had the authors made their (small) data set publicly available concurrently with publication.
+
+*2. What key attributes make a piece of data analysis "reproducible"? Please put those attributes in a prioritized list (i.e., for you, what is most important, next most important, etc...)*
+
+For a piece of data analysis to be reproducible, the most salient attribute should be the raw data itself. Following that, the workflow, data processing, software configuration, and hardware configuration are also highly significant for reproducibility.
+
+*3. Imagine that you are doing a piece of data analysis that only you will ever see: perhaps you are shopping for a car and trying to determine what will give you the best value for your money. Should you think about making your data analysis reproducible? Why or why not?*
+
+It could still be useful to make the analysis reproducible in such a scenario. One reason is that the analysis could be interrupted by unexpected life events. Another reason is that one may want to apply similar analysis techniques in the future.
