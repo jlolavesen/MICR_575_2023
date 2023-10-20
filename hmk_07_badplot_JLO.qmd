@@ -1,0 +1,31 @@
+---
+title: "hmk_07_badplot_JLO"
+format: gfm
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+
+rm(list=ls())
+
+df <- tribble(
+  ~color_class,"purple","purple","purple",
+  "green","green","green",
+  "orange","orange","orange","orange",
+  "yellow","yellow","yellow",
+  "blue","blue","blue","blue","blue","blue"
+  )
+  
+
+ggplot(df, aes(x=0.1, fill = color_class))+
+  geom_bar()+
+  coord_polar(theta = "y")+
+  labs(
+    title = "Relative Frequency Correlation",
+    x = "Pearson's R", y = "Distribution",
+    fill = "Correlation Color"
+  )
+```
+
+*This plot is bad because it contains a lot of nonsense, but also because it's a pie chart for no reason. Even the most generous interpretation should conclude that there is a lot of unnecessary ink, as class counts could have been reasonably displayed in a simple table.*
