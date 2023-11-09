@@ -6,7 +6,10 @@ format: gfm
 # Joins
 
 1. Imagine you’ve found the top 10 most popular destinations using this code:
-```{r}
+```{r message=FALSE}
+library(nycflights13)
+library(tidyverse)
+
 top_dest <- flights |>
   count(dest, sort = TRUE) |>
   head(10)
