@@ -1,0 +1,34 @@
+---
+title: "HMK 08 template"
+format: gfm
+---
+
+# Joins
+
+1. Imagine you’ve found the top 10 most popular destinations using this code:
+```{r}
+top_dest <- flights |>
+  count(dest, sort = TRUE) |>
+  head(10)
+```
+How can you find all flights to those destinations?
+
+```{r message=FALSE}
+top_dest_flights <- top_dest |>
+  left_join(flights) |>
+  select(dest, carrier, flight)
+
+glimpse(group_by(top_dest_flights, dest))
+```
+
+# Functions
+
+2. Write a function to 'rescale' a numeric vector by subtracting the mean of the vector from each element and then dividing each element by the standard deviation. 
+
+```{r}
+rescale02 <- function(x) {
+  ((x-mean(x))/sd(x))
+}
+
+rescale02(c(0:10))
+```
